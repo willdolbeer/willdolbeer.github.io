@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-expand-md navbar-dark">
+  	<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div id="navbar" class="collapse navbar-collapse">
+  		<ul class="navbar-nav navbar-right">
+    		<li class="nav-item"><a class="nav-link" href="javascript:void(0)" (click)="scroll('intro')">Intro</a></li>
+    		<li class="nav-item"><a class="nav-link" href="javascript:void(0)" (click)="scroll('about')">About</a></li>
+    		<li class="nav-item"><a class="nav-link" href="javascript:void(0)" (click)="scroll('experience')">Experience</a></li>
+    		<li class="nav-item"><a class="nav-link" href="javascript:void(0)" (click)="scroll('skills')">Skills</a></li>
+    		<li class="nav-item"><a class="nav-link" href="javascript:void(0)" (click)="scroll('contact')">Contact</a></li>
+  		</ul>
+	</div><!--/.nav-collapse -->
+</nav>
+<div class="container-fluid">
+	<home></home>
+</div>

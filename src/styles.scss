@@ -1,0 +1,269 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  .loading{
+    height: 100vh;
+    width: 100vw;
+    background: #1b1b1b;
+  }
+  font-size: 14px;
+  div{
+    //overflow: auto;
+  }
+  .row{
+    margin-left: 0;
+  margin-right: 0;
+    
+  }
+}
+.navbar.navbar-expand-md{
+  //background-color: rgba(34,34,34,0.25);
+  background: none;
+  z-index: 2;
+  border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+	position: fixed;
+	top: 40vh;
+  right: 0px;
+  .navbar-nav{
+    flex-direction: column;
+    .nav-item{
+       display: block;
+       //background-color: rgba(34,34,34,0.75);
+       .nav-link{
+         text-align: right;
+         font-size: 14px;
+         color: #ffffff;
+         &:hover{
+           color: #9d9d9d;
+         }
+       }
+    }
+  }
+	@media (max-width: 767px){
+	  top: 0;
+	  padding: 0;
+	  width: 100%;
+	  background-color: rgba(34,34,34,0.75);
+    max-width: none;
+    //width: 100%;
+    margin: 0;
+	  .navbar-collapse{
+	    //width: 100;
+      margin-top: 40px;
+	    border-top: 0;
+      .nav-item{
+         .nav-link{
+           text-align: center;
+           
+         }
+      }
+    }
+	}
+	.navbar-toggler{
+	  //background: none;
+	  border: 0;
+	  position: fixed;
+	  top: 0;
+	  right: 0;
+	  &:focus{
+	    outline: 0;
+	  }
+	}
+}
+div.container-fluid{
+	padding: 0;
+}
+.row{
+	position: relative;
+	
+  .display-1{
+    margin-top: -50px;
+    font-size: 5.5rem;
+    @media (max-width: 575px){
+      margin-top: -100px;
+      font-size: 4.5rem;
+    }
+  }
+  .display-4{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 1.75rem;  
+  }
+  h3{
+    font-size: 1.5rem;  
+  }
+	//min-height: 50vh;
+	&#intro{
+		text-align: center;
+		height: 100vh;
+		//padding: 30vh;
+		background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url(assets/steps.jpg);
+		background-size: cover;
+		color: #fff;
+		.section-content{
+		  position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+		  height: 100px;
+		}
+	}
+	&#about{
+	  overflow: auto;
+    background: #1b1b1b;
+    color: #fff;
+    .about-img{
+      border-radius: 50%;
+      width: 25%;
+      float: right;
+      display: inline block;
+      margin-bottom: 15px;
+      @media (max-width: 767px){
+        float: none;
+        width: 40%;
+        margin-left: 20%;
+        //margin-right: auto;
+      }
+    }
+    .about-text{
+      font-size: 17px;
+      width: 70%;
+      //float: right;
+      display: inline block;
+      p{
+        margin-bottom: 20px;
+      }
+      @media (max-width: 767px){
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+	&#skills{
+		background: #1b1b1b;
+    color: #fff;
+    .section-content{
+      //height: 100%;
+    }
+    .skills-list{
+      list-style: none;
+      padding: 0;
+      .skills-item{
+        display: inline-block;
+        width: 30%;
+        margin: 10px 0;
+        text-align: center;
+        font-size: 16px;
+        @media (max-width: 575px){
+          width: 49%;
+        }
+      }
+    }
+	}
+  &#experience{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(assets/desk.jpg);
+    background-size: cover;
+    color: #fff;
+    @media (max-width: 575px){
+      background-size: auto;
+      background-position: center;
+    }
+    .section-content{
+      //height: 100%;
+    }
+  }
+  &#contact{
+    text-align: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(assets/brick.jpg);
+    background-size: cover;
+    color: #fff;
+    min-height: 150px;
+    .section-content{
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      //height: 100px;
+    }
+    .contact-item{
+      margin: 0 20px;
+      img{
+        height: 36px;
+        width: 36px;
+      }
+    }
+    .copyright{
+      margin-top: 30px;
+    }
+  }
+}
+.section-content{
+  padding: 40px;
+  font-size: 14px;
+  h1{
+    //margin-top: 0;
+    //font-size: 4em;
+  }
+  .experience-item{
+    padding: 0 15px 10px;
+  }
+  .title{
+    margin-top: 10px
+  }
+  .sub-title{
+    font-size: 16px;
+    color: #b3b3b3;
+  }
+  .description{
+    font-size: 14px;
+  }
+  .card-container{
+    overflow: auto;
+    display: table-row;
+    .card-cell{
+      float: none;
+      @media (min-width: 576px){
+        height: 100%;
+        display: table-cell;
+        width: 33.333333%;
+        &:not(:first-child){
+          border-left: 1px solid #fff;
+        }
+      }
+      @media (max-width: 575px){
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        &:not(:first-child){
+          //border-top: 1px solid #fff;
+        }
+      }
+    }
+    .card-cell:not(:first-child){
+      //border-left: 1px solid #fff;
+    }
+  }
+  .card{
+    background-color: transparent;
+    border: 0;
+    img{
+      width: 36px;
+      margin-right: 10px;
+    }
+    .card-subtitle{
+      margin-bottom: 10px;
+    }
+    .card-text{
+      font-size: 14px;
+    }
+  }
+}
+
+
