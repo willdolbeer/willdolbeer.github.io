@@ -32,6 +32,9 @@ export class AppComponent {
     
     ngOnInit() {
         this.lastScroll = window.pageYOffset || document.documentElement.scrollTop;
+        $('.nav-link').click((e) =>{
+            e.preventDefault();
+        });
         if($(window).width() >= 768){
             if(window.scrollY > ($(window).height()/2)){
                 $('.navbar').show();
