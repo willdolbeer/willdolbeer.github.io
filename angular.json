@@ -52,18 +52,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "willdolbeer:build"
+            "buildTarget": "willdolbeer:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "willdolbeer:build:production"
+              "buildTarget": "willdolbeer:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "willdolbeer:build"
+            "buildTarget": "willdolbeer:build"
           }
         },
         "test": {
