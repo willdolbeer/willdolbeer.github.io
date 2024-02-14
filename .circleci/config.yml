@@ -74,7 +74,7 @@ workflows:
   build-test-deploy:
     jobs:
 #      - test-node
-      - build-node:
+      - build-node
 #          requires:
 #            - test-node
       - deploy:
