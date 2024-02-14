@@ -66,9 +66,11 @@ jobs:
       - image: cimg/base:stable
     steps:
       - run:
+          name: Install Firebase
+          command: curl -sL https://firebase.tools | upgrade=true bash
+      - run:
           name: Deploy to Firebase
           command: |
-            npm i -g firebase-tools
             echo $SA_KEY > credentials.json
             GOOGLE_APPLICATION_CREDENTIALS=credentials.json firebase deploy
 workflows:
