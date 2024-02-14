@@ -68,6 +68,7 @@ jobs:
       - run:
           name: Deploy to Firebase
           command: |
+            npm i -g firebase-tools
             echo $SA_KEY > credentials.json
             GOOGLE_APPLICATION_CREDENTIALS=credentials.json firebase deploy
 workflows:
