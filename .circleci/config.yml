@@ -32,8 +32,9 @@ jobs:
     executor: node/default
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: npm
+      - run:
+          name: Install packages
+          command: npm install
       - run:
           name: Print node install help instructions
           command: |-
