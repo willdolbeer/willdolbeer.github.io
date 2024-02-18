@@ -4,7 +4,7 @@ orbs:
 executors:
   default-executor:
     docker:
-      - image: cimg/base:stable
+      - image: cimg/node
     working_directory: ~/tmp
 jobs:
   test-node:
