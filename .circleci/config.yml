@@ -67,6 +67,9 @@ jobs:
       - attach_workspace:
           at: .
       - run:
+          name: Install Firebase
+          command: curl -sL https://firebase.tools | upgrade=true bash
+      - run:
           name: Deploy to Firebase
           command: |
             pwd
