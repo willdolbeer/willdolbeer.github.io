@@ -75,7 +75,7 @@ jobs:
             pwd
             ls -a
             echo $SA_KEY > credentials.json
-            GOOGLE_APPLICATION_CREDENTIALS=credentials.json firebase deploy
+            GOOGLE_APPLICATION_CREDENTIALS=credentials.json firebase deploy --token $SA_KEY
 workflows:
   build-test-deploy:
     jobs:
