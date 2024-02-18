@@ -5,7 +5,7 @@ executors:
   default-executor:
     docker:
       - image: cimg/node:lts
-    working_directory: ~/tmp
+    working_directory: ~/willdolbeer
 jobs:
   test-node:
     # Install node dependencies and run tests
@@ -59,7 +59,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - willdolbeer
+            - .
   deploy:
     executor: default-executor
     steps:
