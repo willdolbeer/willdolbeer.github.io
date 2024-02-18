@@ -64,7 +64,6 @@ jobs:
   deploy:
     docker:
       - image: cimg/base:stable
-    working_directory: /tmp/willdolbeer.github.io
     steps:
       - run:
           name: Install Firebase
