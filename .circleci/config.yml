@@ -76,16 +76,16 @@ jobs:
             ls -a
             echo $SA_KEY > credentials.json
             GOOGLE_APPLICATION_CREDENTIALS=credentials.json firebase deploy --token $SA_KEY
-workflows:
-  build-test-deploy:
-    jobs:
+#workflows:
+#  build-test-deploy:
+#    jobs:
 #      - test-node
-      - build-node
+#      - build-node
 #          requires:
 #            - test-node
-      - deploy:
-          requires:
-            - build-node
-          filters:
-            branches:
-              only: master
+#      - deploy:
+#          requires:
+#            - build-node
+#          filters:
+#            branches:
+#              only: master
